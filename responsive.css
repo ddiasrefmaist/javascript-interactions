@@ -1,0 +1,531 @@
+@media only screen and (min-width:120px) and (max-width:460px) {
+  
+
+.vaeaproveite {
+	    width: 65%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 60%;
+}
+
+#slidersection {
+	height: 640px;
+}
+
+.bannerdesktablet {
+	display: none;
+}
+
+h1 br {
+	display: none;
+}
+
+h1 {
+left: 0;
+    top: 8%;
+    font-size: 24px;
+    width: 57%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slider1index {
+	background-image: url(../img/slidermobile1.jpg);
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	height: 640px;
+}
+.slider2index {
+	background-image: url(../img/slidermobile2.jpg);
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	height: 640px;
+}
+
+
+.event {
+	font-size: 20px;
+}
+.boxfit {
+	display: block;
+
+}
+
+.disponivel { float: left;}
+
+.bx-wrapper .bx-controls-direction a {
+	top: 20%;
+}
+.productcall {
+	padding-top: 5%;
+}
+
+
+.bx-next {
+	right: 0 !important;
+}
+.bx-prev {
+	left: 0 !important;
+}
+
+#bx-pager {}
+
+.productphoto { width: 100%; }
+
+.productdesc { width: 100%; }
+
+
+.sliderfitmobile {
+	height: 900px !important;
+}
+.productwrapper { padding: 0; }
+.saibamais { display: block; width: 100px; height: 10px;  }
+.compartilhe { display: none; }
+
+
+.productwrapper { border:none; }
+
+
+.categoriasicone {
+width: 60px;
+float: left;
+background-size: 50px;
+margin-right: 10px;
+
+}
+
+#accordion { display: block; }
+
+#tabs {  }
+
+
+#bx-pagerc1 a img, #bx-pagerc2 a, #bx-pagerc3 a, #bx-pagerc4 a, #bx-pagerc5 a, #bx-pagerc6 a, #bx-pagerc7 a, #bx-pagerc8 a, #bx-pagerc9 a, #bx-pagerc10 a, #bx-pagerc11 a, #bx-pagerc12 a, #bx-pagerc13 a, #bx-pagerc14 a, #bx-pagerc15 a, #bx-pagerc16 a, #bx-pagerc17 a{
+display: none;
+
+}
+
+
+* {
+  -webkit-box-sizing: 0 !important;
+     -moz-box-sizing: 0 !important; box-sizing: 0 !important;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: 0 !important;
+     -moz-box-sizing: 0 !important;
+          box-sizing: 0 !important;
+}
+
+}
+
+@media only screen and (min-width:460px) and (max-width:768px) {
+
+	.bannermobile {
+		display: none;
+	}
+
+	.vaeaproveite {
+		width: 80%;
+		margin-bottom: 80px;
+	}
+
+	.vaeaproveite p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.saibacomobtn {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+
+	#banner-bradesco {
+	height: 250px;
+}	
+
+
+h1 {
+	left: 23%;
+	font-size: 30px;
+	top: 14%;
+}
+
+.slider1index {
+	background-size: cover;
+	background-position: center;
+}	
+
+.disponivel {
+	text-align: center;
+	width: 100%;
+}
+
+.precopor span {
+	top: 15px;
+}
+
+.productprice {
+	width: 460px; margin: 0 auto;
+}
+
+.bx-wrapper img {
+	margin: 0 auto; width: 460px;
+}
+.precopor span {
+	font-size: 55px;
+}
+
+.precopor {
+	font-size: 34px;
+}
+
+.bx-wrapper { 
+padding: 15px; }
+
+.productcall {
+	padding-top: 1%;
+	width: 460px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 5%;
+}
+
+#produtos .bx-viewport {
+    height: 740px !important;
+}
+ 
+.redstripe, .whitestripe {
+	font-size: 28px;
+	height: 45px;
+	padding-left: 0;
+}
+
+.boxfit {
+	display: none;
+
+}
+
+.disponivel { float: left;}
+
+.bx-wrapper .bx-controls-direction a {
+	top: 20%;
+}
+.bx-next {
+	right: 0 !important;
+}
+.bx-prev {
+	left: 0 !important;
+}
+
+#bx-pager {}
+
+.productphoto { width: 100%; }
+
+.productdesc { width: 100%; padding-left: 0; margin: 0 auto; text-align: center;}
+
+
+.sliderfitmobile {
+	height: 900px !important;
+}
+.productwrapper { padding: 0; }
+.saibamais { display: none; }
+.compartilhe { display: none; }
+
+
+.productwrapper { border:none; }
+
+
+.categoriasicone {
+width: 60px;
+float: left;
+background-size: 50px;
+margin-right: 10px;
+
+}
+
+#accordion { display: block; }
+
+#tabs {  }
+
+
+#bx-pagerc1 a img, #bx-pagerc2 a, #bx-pagerc3 a, #bx-pagerc4 a, #bx-pagerc5 a, #bx-pagerc6 a, #bx-pagerc7 a, #bx-pagerc8 a, #bx-pagerc9 a, #bx-pagerc10 a, #bx-pagerc11 a, #bx-pagerc12 a, #bx-pagerc13 a, #bx-pagerc14 a, #bx-pagerc15 a, #bx-pagerc16 a, #bx-pagerc17 a{
+display: none;
+
+}
+
+
+* {
+  -webkit-box-sizing: 0 !important;
+     -moz-box-sizing: 0 !important; box-sizing: 0 !important;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: 0 !important;
+     -moz-box-sizing: 0 !important;
+          box-sizing: 0 !important;
+}
+.precode {
+	padding-bottom: 0;
+	font-size: 34px;
+}
+.precode span {
+	font-size: 19px;
+}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1000px) {
+
+.bannermobile { display: none; }
+
+.vaeaproveite {
+	width: 100%;
+}
+
+h1 {
+	left: 30%;
+	font-size: 30px;
+	top: 10%;
+}
+
+.slider1index {
+	background-size: cover;
+	background-position: center;
+}	
+
+.redstripe, .whitestripe {
+	font-size: 28px;
+	height: 45px;
+}
+
+.precopor span {
+	font-size: 50px;
+}
+.precode { padding-bottom: 0; }
+
+.content {
+	overflow: hidden;
+}
+
+.bx-wrapper img {
+max-width: 85%;
+padding: 3%;
+left: 0;
+}
+
+.precopor {
+	font-size: 22px;
+}
+
+.precode { font-size: 22px; }
+
+.bx-wrapper .bx-viewport {
+}
+
+.bx-viewport {
+	height: 0;
+}
+ 
+.saibamais, .compartilhe { 
+height: auto;
+ }
+
+.saibamais { display: block;  font-size: 16px; padding: 10px 15px 10px 15px; }
+
+.compartilhe { display: block; padding: 10px 15px 10px 15px; }
+
+.boxfit {
+	display: block;
+	width: 100%;
+}
+
+.disponivel { float: left; }
+
+.bx-wrapper .bx-controls-direction a {
+	top: 41%;
+}
+.productcall {
+	padding-top: 5%;
+}
+
+.bx-next {
+	right: 0 !important;
+}
+.bx-prev {
+	left: 0 !important;
+}
+
+#bx-pager {}
+
+.productphoto { width: 50%; float: left; }
+
+.productdesc { width: 40%; float: left; padding-left: 0;}
+
+
+.sliderfitmobile {
+	height: 900px !important;
+}
+.productwrapper { padding: 0; border: dashed 4px #fff; width: 92%; height: 390px; padding: 5px; margin-left: 3%;}
+
+.categoriasicone {
+width: 60px;
+float: left;
+background-size: 50px;
+margin-right: 10px;
+
+}
+
+#accordion { display: block; }
+
+#tabs {  }
+
+
+#bx-pagerc1 a img, #bx-pagerc2 a, #bx-pagerc3 a, #bx-pagerc4 a, #bx-pagerc5 a, #bx-pagerc6 a, #bx-pagerc7 a, #bx-pagerc8 a, #bx-pagerc9 a, #bx-pagerc10 a, #bx-pagerc11 a, #bx-pagerc12 a, #bx-pagerc13 a, #bx-pagerc14 a, #bx-pagerc15 a, #bx-pagerc16 a, #bx-pagerc17 a{
+display: none;
+
+}
+
+
+* {
+  -webkit-box-sizing: 0 !important;
+     -moz-box-sizing: 0 !important; box-sizing: 0 !important;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: 0 !important;
+     -moz-box-sizing: 0 !important;
+          box-sizing: 0 !important;
+}
+
+
+.categoriasicone {
+width: 60px;
+float: left;
+background-size: 50px;
+margin-right: 10px;
+
+}
+
+
+.categoriasicone {
+width: 60px;
+float: left;
+margin-right: 10px;
+
+}
+
+#accordion { display: block; }
+
+#tabs {}
+
+#banner-bradesco {
+	height: 330px;
+}	
+
+
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1200px) {
+
+.bannermobile {display: none;}
+
+
+
+.vaeaproveite {
+	width: 75%;
+}
+
+h1 {
+	font-size: 32px;
+	top: 11%;
+	left: 32%;
+}
+.slider1index {
+	background-size: cover;
+	background-position: center;
+}
+
+#accordion { display: none; }
+
+.boxfit { width: 100%; }
+
+.saibamais {font-size: 15px; float: left; padding: 10px 10px 10px 10px; height: auto; text-align: center; width: 40%;}
+
+.compartilhe { font-size: 17px; float: left; padding: 10px 10px 19px 10px; height: 0; text-align: center; width: 40%;}
+
+.productwrapper { width: 90%; height: 320px; }
+
+.tablist {
+	padding-right: 3.2%;
+}
+
+.productdesc {
+	width: 45%;
+}
+
+.productphoto {
+	width: 46%;
+}
+
+.redstripe, .whitestripe { font-size: 25px; height: 37px;}
+
+.productcall { padding-top: 0; }
+
+.precode { font-size: 24px; }
+
+.precopor { font-size: 20px; }
+
+.precopor span {font-size: 48px;}
+
+#bx-pagerc1 a, #bx-pagerc2 a, #bx-pagerc3 a, #bx-pagerc4 a, #bx-pagerc5 a, #bx-pagerc6 a {
+border-right: 0;
+}
+#bx-pagerc1 a img, #bx-pagerc2 a img, #bx-pagerc3 a img, #bx-pagerc4 a img, #bx-pagerc5 a img, #bx-pagerc6 a img {
+	width: 80%;
+}
+
+
+}
+
+
+
+@media only screen and (min-width:1200px) and (max-width: 1400px) {
+
+.bannermobile{ display: none;}
+
+h1 {
+left: 37%;
+top: 6%;
+font-size: 33px;
+}
+
+#accordion {display: none;}
+
+.ate102 {
+	display: none;
+}
+
+
+}
+
+@media only screen and (min-width:1400px) {
+
+	.bannermobile {display: none;}
+	h1 {
+	left: 38%;
+	top: 6%;
+	font-size: 38px;
+	}
+
+	#accordion {display: none;}
+
+	.ate102 {
+		display: none;
+	}
+
+}

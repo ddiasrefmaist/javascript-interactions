@@ -1,0 +1,22 @@
+{
+  "name": "dedgulp",
+  "version": "0.0.1",
+  "description": "testegulp",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-php-minify": "^0.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "@aquafadas/gulp-php-minify": "^0.2.0"
+  }
+}

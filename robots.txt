@@ -1,0 +1,18 @@
+User-agent: *
+Disallow:
+Disallow:/relacionamentoNovo
+Disallow:/relacionamentoNovo bkp24-01
+Disallow:/relacionamento2
+Disallow:/relacionamento bkp 23-01-2013 layout antigo
+Disallow:/quemvemprajantar_07-11-2011
+Disallow:/adm
+Disallow:/relacionamento/ajax
+Disallow:/relacionamento/adm
+Disallow:/relacionamento/especificador
+Disallow:/relacionamento/lojista
+Disallow:/relacionamento/parceiro
+Disallow:/relacionamento/relatorios
+Disallow:/relacionamento/vendedor
+
+
+Sitemap: http://www.shoppingded.com.br/sitemap_index.xml

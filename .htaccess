@@ -1,0 +1,9 @@
+
+  RewriteEngine On
+  RewriteCond %{SCRIPTS_FILENAME} !-f
+  RewriteCond %{SCRIPTS_FILENAME} !-d
+
+  RewriteRule ^ofertas/(.*)/?$ ofertas.php?loja=$1 [NC]
+  RewriteRule ^descricao/(.*)/?$ descricao.php?produto=$1 [NC]
+
+ Options All -Indexes
