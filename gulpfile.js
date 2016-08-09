@@ -5,7 +5,8 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
-	maps = require('gulp-sourcemaps'),\
+	maps = require('gulp-sourcemaps');
+	cleanCSS = require('gulp-clean-css');
 
 
 gulp.task ("concatScripts", function() {
@@ -19,17 +20,17 @@ gulp.task ("concatScripts", function() {
 		'js/aberto/slick.min.js'
 	])
 	.pipe(maps.init())
-	.pipe(concat("pipe.js"))
+	.pipe(concat("piped.js"))
 	.pipe(maps.write('./'))
-	.pipe(gulp.dest("js/gulpfied"));
+	.pipe(gulp.dest("js/dev/"));
 });
 
 
 gulp.task("minifyScripts", function() {
-    gulp.src("js/gulpfied/pipe.js")
+    gulp.src("js/dev/piped.js")
       .pipe(uglify())
-      .pipe(rename('pipe.min.js'))
-      .pipe(gulp.dest('js/gulpfied'));
+      .pipe(rename('piped.min.js'))
+      .pipe(gulp.dest('js/dist/'));
 });
 
 gulp.task("compileSass", function() {
@@ -37,9 +38,13 @@ gulp.task("compileSass", function() {
     	.pipe(maps.init())
     	.pipe(sass())
     	.pipe(maps.write('./'))
-    	.pipe(gulp.dest('css/'))
+    	.pipe(gulp.dest('css/dev/'))
+    	.pipe()
 });
 
+gulp.task('watchSass', function() {
+	gulp.watch('scss/**/*.scss', ['compileSass']);
+})
 
 gulp.task('build', ['concatScripts', 'minifyScripts' ]);  // 'compileSass' não está definido para este projeto ainda pois não começamos a usar sass
 
