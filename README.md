@@ -10,4 +10,5 @@
 -- Trabalhar com o SASS, um CSS mais prático -- GULP-SASS
 -- Criar mapa de CSS e JAVASCRIPT para facilitar o DEBUG.
 -- Falta implementar a minificação de CSS
--- Falta implementar minificação de imagens
+-- Implementada a função de distribuição e de vigia de tarefas.
+
