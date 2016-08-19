@@ -3,6 +3,7 @@ $primary-color: #333;
 
 @import 'reset';
 @import 'bourbon/_bourbon.scss';
+@import 'vendors/bootstrap-select.scss';
 
 
 body {
