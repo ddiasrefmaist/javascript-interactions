@@ -7,20 +7,35 @@
 
 -- O framework utiliza o GULP.JS com as atividades:
 
-// CONCATENAÇÃO DE JAVASCRIPTS
+// CONCATENAÇÃO DE JAVASCRIPTS 
+
 // MINIFICACAO DE JAVASCRIPTS
+
 // DESENVOLVIMENTO DOS MAPAS DOS JAVASCRIPTS
+
 // COMPILAÇÃO DE ARQUIVOS SASS PARA CSS
+
 // LIMPAR ARQUIVOS ANTIGOS E SUBSTITUIR POR NOVOS
+
 // DISTRIBUICAO PARA DIRETORIOS DE PRODUCAO E DESENVOLVIMENTO
+
 // FUNCAO DE VIGIAR ARQUIVOS FREQUENTEMENTE UTILIZADOS
 
 
+
+UTILIZANDO A LINGUAGEM SASS PARA ESTILOS:
+
 -- Para o SASS estamos utilizando os frameworks BOURBON juntamente ao NEAT, um framework de grids para o SASS que torna o projeto mais leve.
 
+
+
+
 -- Estão incluídos SCRIPTS fundamentais para o desenvolvimento de páginas interativas são estes:
+
 //MODERNIZR
+
 //JQUERY
+
 //BOOTSTRAP SELECT
 
 
