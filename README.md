@@ -1,14 +1,30 @@
-# gulpframework
+#REF+T - DEVELOPMENT FRAMEWORK
+
 
 -- O framework para otimização de front-end da REF+T
--- O Gulp.js, um gerenciador de tarefas javascript.
--- As tarefas necessárias ainda estão em definição e sempre sujeitas a melhoria
--- Até agora as funções disponíveis são:
--- Concatenar arquivos --- GULP-CONCAT
--- Minificar arquivos JS -- GULP-UGLIFY
--- Renomear arquivos ao executar tarefas -- GULP-RENAME
--- Trabalhar com o SASS, um CSS mais prático -- GULP-SASS
--- Criar mapa de CSS e JAVASCRIPT para facilitar o DEBUG.
--- Falta implementar a minificação de CSS
--- Implementada a função de distribuição e de vigia de tarefas.
+
+
+
+-- O framework utiliza o GULP.JS com as atividades:
+
+// CONCATENAÇÃO DE JAVASCRIPTS
+// MINIFICACAO DE JAVASCRIPTS
+// DESENVOLVIMENTO DOS MAPAS DOS JAVASCRIPTS
+// COMPILAÇÃO DE ARQUIVOS SASS PARA CSS
+// LIMPAR ARQUIVOS ANTIGOS E SUBSTITUIR POR NOVOS
+// DISTRIBUICAO PARA DIRETORIOS DE PRODUCAO E DESENVOLVIMENTO
+// FUNCAO DE VIGIAR ARQUIVOS FREQUENTEMENTE UTILIZADOS
+
+
+-- Para o SASS estamos utilizando os frameworks BOURBON juntamente ao NEAT, um framework de grids para o SASS que torna o projeto mais leve.
+
+-- Estão incluídos SCRIPTS fundamentais para o desenvolvimento de páginas interativas são estes:
+//MODERNIZR
+//JQUERY
+//BOOTSTRAP SELECT
+
+
+
+
+--- NESTA VERSÃO ESTA EM DESENVOLVIMENTO UM SLIDER CUSTOMIZADO APLICAVEL A MAIS DIFERENTES SITUAÇÕES
 

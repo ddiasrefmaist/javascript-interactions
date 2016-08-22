@@ -3,7 +3,6 @@
 
 
 var sliderBox = document.getElementsByClassName('wrapperslider');
-
 var nextSlide = document.getElementsByClassName('next');
 var prevSlide = document.getElementsByClassName('prev');
 
