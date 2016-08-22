@@ -22,17 +22,17 @@ return gulp.src([
 	.pipe(gulp.dest('js'));
 });
 
-gulp.task ("concatVendors", function() {
-return gulp.src([
-		'js/vendors/modernizr-custom.js',
-		'js/vendors/jquery-3.1.0.js',
-		'js/vendors/bootstrap-select.js'
-	])
-	.pipe(maps.init())
-	.pipe(concat('pipedvendors.js'))
-	.pipe(maps.write('./'))
-	.pipe(gulp.dest('js'));
-});
+// gulp.task ("concatVendors", function() {
+// return gulp.src([
+// 		'js/vendors/modernizr-custom.js',
+// 		'js/vendors/jquery-3.1.0.js',
+// 		'js/vendors/bootstrap-select.js'
+// 	])
+// 	.pipe(maps.init())
+// 	.pipe(concat('pipedvendors.js'))
+// 	.pipe(maps.write('./'))
+// 	.pipe(gulp.dest('js'));
+// });
 
 
 gulp.task("minifyScripts", ["concatScripts"], function() {
@@ -42,12 +42,12 @@ return gulp.src("js/piped.js")
       .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task("minifyVendors", ["concatVendors"], function() {
-return gulp.src("js/pipedvendors.js")
-      .pipe(uglify())
-      .pipe(rename('pipedvendors.min.js'))
-      .pipe(gulp.dest('js/vendors/'));
-});
+// gulp.task("minifyVendors", ["concatVendors"], function() {
+// return gulp.src("js/pipedvendors.js")
+//       .pipe(uglify())
+//       .pipe(rename('pipedvendors.min.js'))
+//       .pipe(gulp.dest('js/vendors/'));
+// });
 
 gulp.task("compileSass", function() {
 return gulp.src(['scss/application.scss'])
@@ -67,8 +67,8 @@ gulp.task('clean', function(){
 	del(['dist', 'css/application.css*', 'js/piped*.js*', 'js/vendors/pipedvendors*.js*']);
 });
 
-gulp.task('build', ['minifyScripts', 'minifyVendors', 'compileSass'], function () {
-return gulp.src(['css/application.css', 'js/piped.min.js', 'js/vendors/pipedvendors.min.js', 'index.html', 'img/**'], { base:'./'})
+gulp.task('build', ['minifyScripts', 'compileSass'], function () {
+return gulp.src(['css/application.css', 'js/piped.min.js', 'js/vendors/*.js', 'index.html', 'img/**'], { base:'./'})
 	  .pipe(gulp.dest('dist'));
 }); 
 
