@@ -4,6 +4,8 @@ $primary-color: #333;
 @import 'reset';
 @import 'bourbon/_bourbon.scss';
 @import 'vendors/bootstrap-select.scss';
+@import "neat/neat";
+@import "neat/neat-helpers";
 
 
 body {
@@ -30,3 +32,18 @@ nav {
     text-decoration: none;
   }
 }
+
+
+
+  .wrapperslider {
+    @include outer-container;
+  }
+
+  .wrapperslider div {
+     @include span-columns(12 of 12);
+  }
+
+  .scontrol {
+    @include button;
+  }
+

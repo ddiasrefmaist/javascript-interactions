@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 gulp.task ("concatScripts", function() {
 return gulp.src([
 		'js/main.js',
+		'js/slider.js',
 		'js/secondary.js'
 	])
 	.pipe(maps.init())
@@ -37,7 +38,7 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
 return gulp.src("js/piped.js")
       .pipe(uglify())
       .pipe(rename('piped.min.js'))
-      .pipe(gulp.dest('js'));
+      .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task("minifyVendors", ["concatVendors"], function() {
@@ -57,8 +58,8 @@ return gulp.src(['scss/application.scss'])
 
 gulp.task('watchFiles', function() {
 	gulp.watch('scss/**/*.scss', ['compileSass']);
-	gulp.watch('js/piped.js', ['concatScripts']);
-	gulp.watch('js/vendors/pipedvendors.js', ['concatVendors']);
+	gulp.watch('js/*.js', ['concatScripts','minifyScripts']);
+	gulp.watch('js/vendors/*.js', ['concatVendors']);
 })
 
 gulp.task('clean', function(){

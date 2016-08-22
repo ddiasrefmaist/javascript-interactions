@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@aquafadas/gulp-php-minify": "^0.2.0",
+    "bourbon-neat": "^1.8.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
@@ -24,6 +25,7 @@
     "gulp-uglify": "^2.0.0"
   },
   "dependencies": {
+    "bourbon-neat": "^1.8.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.0",
