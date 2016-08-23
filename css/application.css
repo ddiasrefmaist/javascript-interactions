@@ -266,11 +266,12 @@ html {
 
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: #efefef; }
-
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+  color: #333;
+  background-image: -webkit-linear-gradient(transparent 10%, #e0e0e0);
+  background-image: linear-gradient(to   , #e0e0e0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 nav ul {
   margin: 0;
@@ -295,12 +296,7 @@ nav a {
     display: block; }
 
 .wrapperslider div {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
   width: 100%; }
-  .wrapperslider div:last-child {
-    margin-right: 0; }
 
 .scontrol {
   border: 1px solid #076fe4;

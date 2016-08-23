@@ -58,8 +58,18 @@ return gulp.src(['scss/application.scss'])
     	.pipe(gulp.dest('css'))
 });
 
+gulp.task('minifyCSS',['compileSass'], function() {
+	return gulp.src('css/application.css')
+        .pipe(maps.init())
+        .pipe(cleanCSS())
+      	.pipe(rename('application.min.css'))
+        .pipe(maps.write('/'))
+        .pipe(gulp.dest('dist/css'));
+    });
+
+
 gulp.task('watchFiles', function() {
-	gulp.watch('scss/**/*.scss', ['compileSass']);
+	gulp.watch('scss/**/*.scss', ['compileSass', 'minifyCSS']);
 	gulp.watch('js/*.js', ['concatScripts','minifyScripts']);
 })
 
@@ -67,8 +77,8 @@ gulp.task('clean', function(){
 	del(['dist', 'css/application.css*', 'js/piped*.js*', 'js/vendors/pipedvendors*.js*']);
 });
 
-gulp.task('build', ['minifyScripts', 'minifyVendors', 'compileSass'], function () {
-return gulp.src(['css/application.css', 'js/piped.min.js', 'js/vendors/piped*.js*', 'index.html', 'img/**'], { base:'./'})
+gulp.task('build', ['minifyScripts', 'minifyVendors', 'compileSass', 'minifyCSS'], function () {
+return gulp.src(['css/application.*.css', 'js/piped.min.js', 'js/vendors/piped*.js*', 'index.html', 'img/**'], { base:'./'})
 	  .pipe(gulp.dest('dist'));
 }); 
 

@@ -1,5 +1,7 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$fullheight: 100%;
+
 
 @import 'reset';
 @import 'bourbon/_bourbon.scss';
@@ -8,13 +10,15 @@ $primary-color: #333;
 @import "neat/neat-helpers";
 
 
-body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
-}
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  @include background-image(linear-gradient( transparent 10%, #e0e0e0));
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  
 }
 
 nav {
@@ -40,7 +44,7 @@ nav {
   }
 
   .wrapperslider div {
-     @include span-columns(12 of 12);
+    @include fill-parent;
   }
 
   .scontrol {

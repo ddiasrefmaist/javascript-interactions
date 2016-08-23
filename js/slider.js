@@ -7,4 +7,4 @@ var totalItems = $('.wrapperslider').children().length;
 $(allSld).hide();
 $(sliOne).show();
 
-alert( "Index: " + $(sliOne).index() );
+// alert( "Index: " + $(sliOne).index() );
