@@ -1,10 +1,14 @@
 
 
+var wrapper = $('.wrapperslider');
+var allSld =  $('.wrapperslider').children();
+var sliOne = $('.wrapperslider>div:first-child');
+var lastSli = $('.wrapperslider>div:last-child');
+var totalItems = $('.wrapperslider').children().length;
 
+$(allSld).hide();
+$(sliOne).show();
 
-	var sldlen = $('.wrapperslider');
-
-
-
+alert( "Index: " + $(sliOne).index() );
 
 //# sourceMappingURL=piped.js.map
