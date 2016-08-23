@@ -1,15 +1,17 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-$fullheight: 100%;
-
 
 @import 'reset';
 @import 'bourbon/_bourbon.scss';
-@import 'vendors/bootstrap-select.scss';
 @import "neat/neat";
 @import "neat/neat-helpers";
 
-
+$navheight: 60px;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$secondary-color: #fff;
+$fullheight: 100%;
+$backnormal: #000;
+$backnormal2: #555;
+$backhover: #333;
 
 body {
   font: 100% $font-stack;
@@ -19,6 +21,36 @@ body {
   background-size:cover;
   background-attachment: fixed;
   
+}
+
+nav {
+  background-color: $backnormal;
+  height: $navheight;
+  margin-bottom: em(50px);
+ 
+}
+
+nav ul {
+  height: $navheight;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  height: $navheight;
+  width: percentage(25/100);
+  @include margin(0 0 0 0);
+  @include padding(0 0 0 0);
+  background-color: $backnormal2;
+  float: left;
+}
+
+nav ul li a {
+  color: $secondary-color;
+  line-height:45px;
+  @include margin(0 0 0 0);
+  @include padding(0 0 0 0);
+  height: 100%;
 }
 
 .container {
@@ -54,8 +86,13 @@ nav {
   }
 }
 
+.wrapperslider {
+     margim-bottom: em(50px);
+}
+
   .wrapperslider div, .wrapperslider div img {
     @include fill-parent;
+
   }
 
   .scontrol {

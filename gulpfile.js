@@ -26,7 +26,6 @@ gulp.task ("concatVendors", function() {
 return gulp.src([
 		'js/vendors/jquery-3.1.0.js',
 		'js/vendors/modernizr-custom.js',
-		'js/vendors/bootstrap-select.js',
 		'js/vendors/TweenLite.js'
 	])
 	.pipe(maps.init())
