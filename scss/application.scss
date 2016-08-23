@@ -21,6 +21,23 @@ body {
   
 }
 
+.container {
+  @include outer-container;
+}
+
+.gallery {
+ @include span-columns(12);
+ height: 400px;
+}
+
+.imgbox {
+  @include span-columns(4 of 12);
+}
+
+.imgbox img {
+   @include fill-parent;
+}
+
 nav {
   ul {
     margin: 0;
@@ -37,17 +54,27 @@ nav {
   }
 }
 
-
-
-  .wrapperslider {
-    @include outer-container;
-  }
-
-  .wrapperslider div {
+  .wrapperslider div, .wrapperslider div img {
     @include fill-parent;
   }
 
   .scontrol {
     @include button;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+    text-align: center;
+  }
+
+  .overlay img {
+      margin-top: 10%;
+      @include size(50% 50%);
   }
 

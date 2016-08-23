@@ -67,10 +67,15 @@ gulp.task('minifyCSS',['compileSass'], function() {
         .pipe(gulp.dest('dist/css'));
     });
 
+gulp.task('htmlPipe', function() {
+   return gulp.src(['*.html'], { base:'./'})
+   .pipe(gulp.dest('dist'));
+});
 
 gulp.task('watchFiles', function() {
 	gulp.watch('scss/**/*.scss', ['compileSass', 'minifyCSS']);
 	gulp.watch('js/*.js', ['concatScripts','minifyScripts']);
+	gulp.watch('*.html', ['htmlPipe']);
 })
 
 gulp.task('clean', function(){
