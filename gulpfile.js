@@ -14,7 +14,7 @@ gulp.task ("concatScripts", function() {
 return gulp.src([
 		'js/main.js',
 		'js/slider.js',
-		'js/secondary.js'
+		'js/nav.js'
 	])
 	.pipe(maps.init())
 	.pipe(concat('piped.js'))

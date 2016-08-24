@@ -1,5 +1,18 @@
 //LIGHTBOX
 
+// var W;
+// function getDocHeight() {
+//     var D = document;
+//     W = Math.max(
+//         Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+//         Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+//         Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+//     );
+
+// }
+
+
+
 var $overlay = $('<div class="overlay"></div>');
 var $images = $('<img>');
 
@@ -22,15 +35,3 @@ $overlay.click(function() {
 });
 
 //FIM DO LIGHTBOX
-
-var $select = $('<select></select>');
-
-$('nav').append($select);
-
-$('nav a').each(function() {
-	var $anchor = $(this);
-	var $option = $('<option></option>');
-	$option.val($anchor.attr('href'));
-	$option.text($anchor.text());
-	$select.append($option);
-});
