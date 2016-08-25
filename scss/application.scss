@@ -71,15 +71,24 @@ body {
       margin-top: 2%;
   }
 
+  .thumbs {
+    @include outer-container;
+  }
 
   .thumbnails {
-       @include outer-container;
+    @include outer-container;
   }
 
   .thumbnail_ul {
-      @include fill-parent;
+    @include fill-parent;
   }
 
   .thumbnail_ul li {
-    @include span-columns(3 of 12);
+    @include span-columns(4 of 12);
   }
+
+  .thumbnail_ul li img {
+    @include fill-parent;
+  }
+
+
